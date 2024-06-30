@@ -6,4 +6,8 @@ class PlayerCharacter {
     public static int getX(){
         return x;
     }
+    public static int getY() {
+        return y;
+    }
+
 }

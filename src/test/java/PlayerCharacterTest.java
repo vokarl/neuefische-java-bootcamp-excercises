@@ -11,7 +11,7 @@ public class PlayerCharacterTest {
     void resetAllXY() {
         //Setze x & y wieder auf 0. Das macht jeden Test wieder erwartbar, da immer von x&y=0 ausgegangen wird.
         PlayerCharacter.x =0;
-        PlayerCharacter.y =1;
+        PlayerCharacter.y =0;
     }
 
     @Test
@@ -24,8 +24,15 @@ public class PlayerCharacterTest {
         assertEquals(expected, actual);
         }
 
-
-
+@Test
+    public void getY_Test_returns_0(){
+    //GIVEN
+    int expected = 0;
+    //WHEN
+    int actual = PlayerCharacter.getY();
+    //THEN
+    assertEquals(expected, actual);
+}
 
 
 
