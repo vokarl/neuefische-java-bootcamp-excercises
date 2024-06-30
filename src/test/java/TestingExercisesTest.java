@@ -1,8 +1,9 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestingExercisesTest {
+public class TestingExercisesTest {
 
     @Test
     public void sum_expect9_when4and5() {
