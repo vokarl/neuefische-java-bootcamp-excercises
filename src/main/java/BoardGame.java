@@ -17,7 +17,10 @@ if (direction.equals("w")){
 }else if (direction.equals("s")) {
     y --;
     return getY();
- }
+ }else if (direction.equals("d")) {
+    x++;
+    return getX();
+}
 return 23;
     }
 }

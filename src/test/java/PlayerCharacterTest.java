@@ -44,10 +44,20 @@ public class PlayerCharacterTest {
         assertEquals(expected, actual);
     }
     @Test
-    public void moveDown_Test_1_whenS(){
+    public void moveDown_Test_neg1_whenS(){
         //GIVEN
         String direction = "s";
         int expected = -1;
+        //WHEN
+        int actual = PlayerCharacter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void moveRight_Test_1_whenD(){
+        //GIVEN
+        String direction = "d";
+        int expected = 1;
         //WHEN
         int actual = PlayerCharacter.move(direction);
         //THEN
