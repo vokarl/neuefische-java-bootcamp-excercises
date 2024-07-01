@@ -20,7 +20,10 @@ if (direction.equals("w")){
  }else if (direction.equals("d")) {
     x++;
     return getX();
-}
+} else if (direction.equals("a")) {
+        x--;
+        return getX();
+    }
 return 23;
     }
 }

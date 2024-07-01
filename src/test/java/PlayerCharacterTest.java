@@ -63,7 +63,16 @@ public class PlayerCharacterTest {
         //THEN
         assertEquals(expected, actual);
     }
-
+    @Test
+    public void moveLeft_Test_neg1_whenA(){
+        //GIVEN
+        String direction = "a";
+        int expected = -1;
+        //WHEN
+        int actual = PlayerCharacter.move(direction);
+        //THEN
+        assertEquals(expected, actual);
+    }
 
 
 
