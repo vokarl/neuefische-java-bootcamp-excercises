@@ -10,4 +10,11 @@ class PlayerCharacter {
         return y;
     }
 
+    public static int move(String direction) {
+if (direction.equals("w")){
+             y ++;
+             return getY();
+        }
+return 23;
+    }
 }
