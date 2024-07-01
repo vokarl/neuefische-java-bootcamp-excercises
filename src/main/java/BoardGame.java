@@ -14,7 +14,10 @@ class PlayerCharacter {
 if (direction.equals("w")){
              y ++;
              return getY();
-        }
+}else if (direction.equals("s")) {
+    y --;
+    return getY();
+ }
 return 23;
     }
 }
