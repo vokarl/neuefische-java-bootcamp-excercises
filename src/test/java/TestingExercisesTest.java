@@ -62,8 +62,6 @@ public class TestingExercisesTest {
         assertEquals(true, actual);
     }
 
-
-
     @Test
     public void negativeTest_expectTrue_when_negativeNumber() {
         //GIVEN
@@ -75,16 +73,6 @@ public class TestingExercisesTest {
         //THEN
         assertEquals(true, actual);
     }
-
-
-
-
-
-
-
-
-
-
 
 
 
