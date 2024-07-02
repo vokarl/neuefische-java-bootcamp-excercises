@@ -38,13 +38,24 @@ class PasswordValidationTest {
         assertEquals(expected, actual);
     }
     @Test
-    public void containsUpperAndLowerCaseTest_true_when_digit() {
+    public void containsUpperAndLowerCaseTest_true_when_aA() {
         //GIVEN
         String password = "aA";
         boolean expected = true;
 
         //WHEN
         boolean actual =Passwordvalidation.containsUpperAndLowerCase(password);
+        //THEN
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void weakPasswordTest_true_when_weakPassword() {
+        //GIVEN
+        String password = "password1";
+        boolean expected = true;
+
+        //WHEN
+        boolean actual =Passwordvalidation.weakPassword(password);
         //THEN
         assertEquals(expected, actual);
     }

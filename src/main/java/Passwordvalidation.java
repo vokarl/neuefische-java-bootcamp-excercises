@@ -26,6 +26,15 @@ public class Passwordvalidation {
             }
         }return false;
     }
+
+    public static boolean weakPassword(String password) {
+    String[] passwordSet ={"password", "password1", "password2", "password3", "password4", "password5", "password6", "password7", "password8", };
+            for (String currentPassword : passwordSet) {
+                if (currentPassword.equals(password)) {
+                    return true;
+                }
+            }return false;
+    }
 }
 
 
