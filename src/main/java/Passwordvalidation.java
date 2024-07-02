@@ -8,7 +8,6 @@ public class Passwordvalidation {
     }
 
     public static boolean containsDigits(String password) {
-
         for (char c : password.toCharArray()) {
             if (Character.isDigit(c)) {
                 return true;
@@ -17,6 +16,16 @@ public class Passwordvalidation {
         return false;
     }
 
+    public static boolean containsUpperAndLowerCase(String password) {
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                return true;
+            }
+            if (Character.isLowerCase(c)) {
+                return true;
+            }
+        }return false;
+    }
 }
 
 
