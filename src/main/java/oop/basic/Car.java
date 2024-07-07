@@ -1,4 +1,4 @@
-package OOP;
+package oop.basic;
 
 public class Car {
     private String brand;
@@ -44,7 +44,7 @@ public class Car {
     }
     public void speed(int speed){
         this.speed += speed;
-        System.out.println("The speed of the " + brand + "has been raised" + " by " + speed + " kmh." );
+        System.out.println("The speed of the " + brand + " has been raised" + " by " + speed + " kmh." );
     }
 
 }

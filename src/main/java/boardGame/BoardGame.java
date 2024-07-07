@@ -1,3 +1,5 @@
+/*package boardGame;
+
 class PlayerCharacter {
     public static int x = 0;
     public static int y = 0;
@@ -25,4 +27,4 @@ if (direction.equals("w")){
     }
 return 23;
     }
-}
+}*/

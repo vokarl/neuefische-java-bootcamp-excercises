@@ -1,4 +1,4 @@
-package OOP.Inheritance;
+package oop.inheritance;
 
 public class Instrument {
    public String brand;

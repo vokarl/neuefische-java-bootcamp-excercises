@@ -1,4 +1,4 @@
-package OOP.libraryDeleteAddArrayItemsOOP;
+package oop.libraryDeleteAddArrayItemsOOP;
 
 import java.util.ArrayList;
 import java.util.Arrays;

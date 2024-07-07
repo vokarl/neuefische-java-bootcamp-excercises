@@ -1,4 +1,4 @@
-package OOP.Inheritance;
+package oop.inheritance;
 
     public class StringInstrument extends Instrument {
         int numberOfStrings;
