@@ -1,8 +1,31 @@
 package oop.recordBigDecimal.record;
 
+import java.util.Objects;
+
 public record Animal(String ID, String Name, String Species, int age) {
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return age == animal.age && Objects.equals(ID, animal.ID) && Objects.equals(Name, animal.Name) && Objects.equals(Species, animal.Species);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(ID, Name, Species, age);
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "ID='" + ID + '\'' +
+                ", Name='" + Name + '\'' +
+                ", Species='" + Species + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
 
 
@@ -12,11 +35,6 @@ public record Animal(String ID, String Name, String Species, int age) {
 
 
 /*
-Create a new project in IntelliJ and lay the foundation for the Java Record Zoo Project.
-Create a Java record "Animal" that should have properties for ID, Name, Species, and Age. Choose suitable field names.
-
-Make a commit. Please post the link to your GitHub repository where you solved this task together. inputfield
-Coding: Calling Record Methods
 
 Now let's test the automatically generated methods.
 
