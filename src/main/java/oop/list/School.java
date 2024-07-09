@@ -10,12 +10,12 @@ public class School {
     public static void main(String[] args) {
         School school = new School();
 
-        // Adding students to the school
+
         school.addStudent(new Student("John", "Doe", 1));
         school.addStudent(new Student("Jane", "Smith", 2));
         school.addStudent(new Student("Michael", "Johnson", 3));
 
-        // Printing all students in the school
+
         school.printAllStudents();
 
         Student foundStudent = school.findById(2);
