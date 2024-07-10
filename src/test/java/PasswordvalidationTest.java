@@ -49,7 +49,7 @@ class PasswordValidationTest {
     public void containsUpperCaseTest_true_when_A() {
         //GIVEN
         String password = "PASSWORD";
-        boolean expected = true;
+        boolean expected = false;
         //WHEN
         boolean actual =Passwordvalidation.containsUpperAndLowerCase(password);
         //THEN
@@ -59,7 +59,7 @@ class PasswordValidationTest {
     public void containsLowerCaseTest_true_when_a() {
         //GIVEN
         String password = "password";
-        boolean expected = true;
+        boolean expected = false;
         //WHEN
         boolean actual =Passwordvalidation.containsUpperAndLowerCase(password);
         //THEN
