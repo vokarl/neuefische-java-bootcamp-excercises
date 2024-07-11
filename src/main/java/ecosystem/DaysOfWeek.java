@@ -15,6 +15,5 @@ public String weekDayChecker(){
         }else{
             return this.name();
         }
-
 }
 }

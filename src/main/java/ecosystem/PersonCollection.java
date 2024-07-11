@@ -7,9 +7,9 @@ import java.util.Optional;
 public class PersonCollection {
     List<Person> personList = new ArrayList<>();
 
-    public Optional<Person> findPersonByName(String name) {   // Optional <> = datentyp
+    public Optional<Person> findPersonById(int Id) {
         for (Person person : personList) {
-            if (person.name().equals(name)) {      //name = getter aus person.java
+            if (person.id() == (Id)) {
                 return Optional.ofNullable(person);
             }
         }

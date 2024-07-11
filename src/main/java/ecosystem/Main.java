@@ -12,8 +12,8 @@ public class Main {
         personCollection.personList.add(new Person(2, "Bob", DaysOfWeek.FRIDAY));
 
 
-        Optional<Person> foundPerson = personCollection.findPersonByName("Al");
-        Optional<Person> foundPerson2 = personCollection.findPersonByName("Alice");
+        Optional<Person> foundPerson = personCollection.findPersonById(1);
+
 
         // Verarbeitung des Optionals
         if (foundPerson.isPresent()) {
@@ -21,9 +21,7 @@ public class Main {
         } else {
             System.out.println("Person nicht gefunden.");
         }
-
-
-
-
     }
+
+
 }

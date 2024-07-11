@@ -19,4 +19,6 @@ public record Person(
     public DaysOfWeek favouriteDay() {
         return favouriteDay;
     }
+
+
 }
