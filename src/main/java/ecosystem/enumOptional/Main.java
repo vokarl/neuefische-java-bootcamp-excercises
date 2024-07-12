@@ -1,4 +1,4 @@
-package ecosystem;
+package ecosystem.enumOptional;
 
 import java.util.Optional;
 

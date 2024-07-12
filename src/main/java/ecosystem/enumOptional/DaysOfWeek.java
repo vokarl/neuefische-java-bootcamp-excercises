@@ -1,4 +1,4 @@
-package ecosystem;
+package ecosystem.enumOptional;
 
 public enum DaysOfWeek {
     MONDAY,
