@@ -14,7 +14,6 @@ public class Main {
 
         Optional<Person> foundPerson = personCollection.findPersonById(1);
 
-
         // Verarbeitung des Optionals
         if (foundPerson.isPresent()) {
             System.out.println("Person gefunden: " + foundPerson.get());
