@@ -1,4 +1,4 @@
-package oop.recap2;
+package oop.recap2Shop;
 import java.util.List;
 
 public interface Sorter {
