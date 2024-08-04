@@ -46,4 +46,9 @@ public class Student {
                 ", studentId=" + studentId +
                 '}';
     }
+    public void updateStudent(String firstName, String lastName, int studentId) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setStudentId(studentId);
+    }
 }

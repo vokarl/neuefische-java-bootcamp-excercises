@@ -11,6 +11,10 @@ public class School {
         School school = new School();
 
 
+Student protoStud = new Student("brr", "krr", 000);
+
+
+
         school.addStudent(new Student("John", "Doe", 1));
         school.addStudent(new Student("Jane", "Smith", 2));
         school.addStudent(new Student("Michael", "Johnson", 3));
@@ -32,7 +36,21 @@ public class School {
             System.out.println("Student not found");
         }
 
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::");
 
+
+
+        System.out.println(protoStud);
+
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::");
+       protoStud.updateStudent("proto", "koll", 23);
+
+
+       school.addStudent(protoStud);
+
+       school.printAllStudents();
+
+       
 
     }
 
@@ -69,6 +87,8 @@ public class School {
         }
         return null;
     }
+
+
 
 
 }
