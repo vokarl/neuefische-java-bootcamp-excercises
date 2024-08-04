@@ -8,18 +8,19 @@ public class ShopService {
     private ProductRepo productRepo = new ProductRepo();
     private OrderListRepo orderListRepo = new OrderListRepo();
 
-    /*tricky-- parameter = liste Product ids- neue product list,
-    aus product Ids (Bestellentscheidung), für jedes einzelne produkt
-     -> in variable pr.ToOrder das gesamte Product aus dem Product repo holen und speichern
-     -> jedes gefundene product der orderProducts liste hinzufügen}
-     -> instanz einer Order erstellen und EINE id verg. orderProducts liste hinzufügen
-      newOrder zu orderList repo hinzufügen */
-
+    public ShopService(ProductRepo productRepo, OrderListRepo orderListRepo) {
+        this.productRepo = productRepo;
+        this.orderListRepo = orderListRepo;
+    }
     public Order addItemToOrder(List<String> productIds){
         List<Product> orderProducts = new ArrayList<>();
         for (String productId : productIds){
             Product productToOrder = productRepo.getProductById(productId);
-            orderProducts.add(productToOrder);
+            if (productToOrder != null) {
+                orderProducts.add(productToOrder);
+            } else {
+                System.out.println("Product with ID " + productId + " does not exist.");
+            }
         }
         Order newOrder = new Order(UUID.randomUUID().toString(), orderProducts);
         return orderListRepo.addOrder(newOrder);
