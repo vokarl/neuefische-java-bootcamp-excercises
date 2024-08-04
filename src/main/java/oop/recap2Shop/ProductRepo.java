@@ -3,44 +3,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProductRepo {
+    private List<Product> products;
 
-   private List<Product> products;// Liste erzeugen
-
-    public ProductRepo(){
+    public ProductRepo (){
         products = new ArrayList<>();
-        products.add(new Product("1","Apfel"));
     }
 
-
-    public List<Product> getProducts() {  //getter, um alle Produkte anzeigen zu können
+    public List<Product> getProducts() {
         return products;
     }
-
-    public Product getProductById(String id){    //Produkt anzeigen per id
-        for(Product product : products){
-            if(product.id().equals(id)){
+    public void getProductToConsole() {
+        System.out.println("all Products:");
+        for (Product product : products) {
+            System.out.println(product);
+        };
+    }
+    public Product getProductById(String id){
+        for (Product product : products){
+            if (product.id().equals(id)){
                 return product;
             }
         }
-          return null;
-
+        return null;
     }
 
     public Product addProduct(Product newProduct){
-            products.add(newProduct);    // add = methode von List - braucht return
-            return newProduct;
+        products.add(newProduct);
+        return newProduct;
     }
 
-    public void removeProduct(String id){
+    public void removeProductById(String id){
         for (Product product : products){
-            if(product.id().equals(id)){
+            if (product.id().equals(id)){
                 products.remove(product);
                 return;
-            }
-        }
+            }        }
     }
-
-
 }
-
