@@ -3,7 +3,7 @@ package oop.recap2Shop;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderListRepo {
+public class OrderListRepo implements OrderRepo{
 
 
    private List<Order> orders = new ArrayList<>();
@@ -23,7 +23,7 @@ public class OrderListRepo {
        orders.add(newOrder);
        return newOrder;
 }
-    public void removeOrder(String id){
+    public void removeOrderById(String id){
        for (Order order : orders){
            if(order.id().equals(id)){
                orders.remove(order);
